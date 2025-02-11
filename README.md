@@ -1,6 +1,6 @@
 # 🏋️‍♂️ SkillGain - "Passe de fase, treine como um expert" – Banco de dados para gamificação de treinos 
 [PT]
-O **SkillGain** é um sistema pensando para a **gamificação de academias**, projetado para tornar os treinos mais dinâmicos e motivadores. A ideia central do projeto é permitir que alunos acompanhem sua evolução de forma interativa, vivendo um jogo, enquanto treinadores conseguem otimizar a criação de treinos personalizados com base nos dados e histórico dos alunos. 
+O **SkillGain** é um sistema pensado para a **gamificação de academias**, projetado para tornar os treinos mais dinâmicos e motivadores. A ideia central do projeto é permitir que alunos acompanhem sua evolução de forma interativa, vivendo um jogo, enquanto treinadores conseguem otimizar a criação de treinos personalizados com base nos dados e histórico dos alunos. 
 
 O projeto tem como base um **banco de dados relacional MySQL**, modelado para armazenar e processar todas as informações relevantes sobre alunos, instrutores, treinos, desempenho físico e frequência na academia. O objetivo final é integrar esse banco de dados a um **aplicativo ou painel interativo**, onde os usuários podem visualizar estatísticas, desafios e metas a serem atingidas e fases a serem desbloqueadas.
 
