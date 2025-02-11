@@ -1,4 +1,4 @@
-# 🏋️‍♂️ SkillGain - "Passe de fase, treine como um expert" – Banco de Dados para Gamificação de Treinos 
+# 🏋️‍♂️ SkillGain - "Passe de fase, treine como um expert" – Banco de dados para gamificação de treinos 
 [PT]
 O **SkillGain** é um sistema pensando para a **gamificação de academias**, projetado para tornar os treinos mais dinâmicos e motivadores. A ideia central do projeto é permitir que alunos acompanhem sua evolução de forma interativa, vivendo um jogo, enquanto treinadores conseguem otimizar a criação de treinos personalizados com base nos dados e histórico dos alunos. 
 
@@ -43,8 +43,74 @@ A modelagem foi projetada para garantir **integridade, escalabilidade e performa
 
 A modelagem segue os princípios de **normalização**, reduzindo redundâncias e garantindo **consistência dos dados**.
 
-![Diagrama EER](coloque_aqui_o_caminho_da_imagem)
+![Diagrama EER](https://github.com/user-attachments/assets/c1725fc3-72f9-45ff-a760-b0827fd712f3)
+
+Mas o trabalho ainda não acabou...
+
+## 🚀 Próximos Passos
+- Implementação de **views** para facilitar consultas analíticas.
+- Desenvolvimento de **stored procedures** para automatizar cálculos e processos.
+- Criação de **triggers** para manter a integridade dos dados em tempo real.
+- Integração com **Power BI** para visualização interativa dos treinos e progresso dos alunos.
+- Desenvolvimento de um **front-end (painel ou app)** para interagir com os dados de forma intuitiva.
+
 
 
 [EN] 
-This project consists of modeling a database for a gym, developed in MySQL, with the aim of feeding an application that gamifies the training process for students and optimizes training preparation by trainers. 
+# SkillGain - "Level up, train like an expert."
+
+**SkillGain** is a system designed for the **gamification of gyms**, aimed at making workouts more dynamic and motivating. The core idea of the project is to allow gym members to track their progress interactively, experiencing a game-like environment, while trainers can optimize the creation of personalized workouts based on student data and history.
+
+The project is built on a **relational MySQL database**, modeled to store and process all relevant information about gym members, instructors, workouts, physical performance, and gym attendance. The ultimate goal is to integrate this database with an **application or interactive dashboard**, where users can view statistics, challenges, goals to be achieved, and levels to be unlocked.
+
+## 🎯 How Would the App Work?
+
+**SkillGain** would function as a tool for gyms looking to innovate in how they track student progress. Based on the data stored in the database, the system can generate the following features:
+
+### ✅ Student Dashboard
+- Display of **updated biometrics** (weight, body fat percentage, lean mass, hydration)
+- Progress of completed vs. planned workouts
+- Workout recommendations
+- Unlocked levels based on the gym member final goal
+
+### ✅ Instructor Panel
+- Analysis of workouts completed by students
+- Feedback on performance and reported difficulties
+- Suggestions for adjustments to workout plans
+- Suggestions for workout schedules aligned with the student's history, muscle group progression, and available time.
+
+### ✅ Workout Gamification
+- Personalized goals and challenges (e.g., "Complete 10 workouts this month!")
+- Internal student ranking based on attendance and progress
+- Rewards and achievements for workout consistency
+
+These functionalities are made possible by the robust database structure, which efficiently stores information for future analysis and visualization.
+
+## 🏗️ Database Structure
+
+The modeling was designed to ensure **integrity, scalability, and performance**. The main tables in the database include:
+
+### 📌 Main Tables
+- **Student** – Records student information, including personal data, biometrics, and workout frequency.
+- **Instructor** – Contains data about the trainers responsible for prescribing workouts and their specialties.
+- **Workout Plan** – Stores personalized workout routines for each student.
+- **Exercises** – Detailed registration of existing exercises, including muscle group, calories burned, and estimated time.
+
+### 📊 Relationship Tables
+- **exercises_has_workout_plan** – Relates exercises to workout plans.
+- **attendance** – Records student attendance and statistics on completed workouts.
+- **bioimpedance** – Maintains a history of the student's physical assessments.
+- **goal and goal_type** – Defines personalized goals for students, linked to a specific type of goal (e.g., weight loss, muscle gain).
+
+The modeling follows **normalization** principles, reducing redundancies and ensuring **data consistency**.
+
+![EER Diagram](https://github.com/user-attachments/assets/c1725fc3-72f9-45ff-a760-b0827fd712f3)
+
+But the work isn't done yet...
+
+## 🚀 Next Steps
+- Implementation of **views** to facilitate analytical queries.
+- Development of **stored procedures** to automate calculations and processes.
+- Creation of **triggers** to maintain real-time data integrity.
+- Integration with **Power BI** for interactive visualization of workouts and student progress.
+- Development of a **front-end (dashboard or app)** to interact with the data intuitively.
